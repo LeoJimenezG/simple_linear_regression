@@ -38,7 +38,9 @@ def calculate_r2(y_original: DataFrame, y_predicted: DataFrame) -> float:
 
 
 def calculate_rmse(y_original: DataFrame, y_predicted: DataFrame):
-    """Calculate the rmse """
+    """Calculate the 'rmse' coefficient. Accepts the 'y_original' as a single column DataFrame containing the original
+     data about the dependent variable used to calculate b0 and b1 coefficients, and 'y_predicted' as a single column
+     DataFrame containing the predicted values."""
     vals = 0
     n = len(y_original)
     for i in range(0, n):
